@@ -4,6 +4,7 @@ FROM python:3.7
 # Install python and pip
 RUN pip install --upgrade setuptools
 RUN pip install --upgrade pip
+RUN pip install pickle-mixin
 # RUN apk add --update py3-pip
 
 

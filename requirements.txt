@@ -1,4 +1,4 @@
-numpy
+# numpy
 streamlit
 pandas
-pickle
+# pickle
