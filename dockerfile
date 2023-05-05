@@ -3,6 +3,7 @@ FROM python:latest
 
 # Install python and pip
 RUN pip install --upgrade setuptools
+RUN pip install --upgrade pip
 # RUN apk add --update py3-pip
 
 
