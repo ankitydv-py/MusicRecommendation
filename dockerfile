@@ -1,5 +1,5 @@
 # this is my base image
-FROM python:latest
+FROM python:3.7
 
 # Install python and pip
 RUN pip install --upgrade setuptools
