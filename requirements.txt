@@ -1,4 +1,4 @@
---upgrade setuptools
+numpy
 streamlit
 pandas
 pickle
