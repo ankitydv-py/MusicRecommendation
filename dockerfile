@@ -1,8 +1,3 @@
-import hudson.model.*
-
-def build = Thread.currentThread().executable
-def buildNumber = build.number
-
 # this is my base image
 FROM alpine:3.5
 
