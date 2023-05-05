@@ -29,3 +29,11 @@ jobs:
           push: true
           tags: ankitpy/music-image:latest
   
+      - 
+        name: Build, tag, and push image to Amazon ECR
+        env:
+          ECR_REGISTRY: ${{ secrets.ECR_REGISTRY }}
+        run: |
+          docker pull ankitpy/music-image
+          docker tag musicapp:latest $ECR_REGISTRY/music-image:latest
+          docker push $ECR_REGISTRY/music-image:latest
