@@ -1,6 +1,6 @@
 app-v2.py
-data.csv
+# data.csv
 logo.png
-model.pickle
+# model.pickle
 model.py
 user_data.csv

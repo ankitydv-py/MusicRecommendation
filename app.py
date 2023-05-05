@@ -2,8 +2,9 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-# loading data to fit the model
+# loading data to fit the model 
 data = pd.read_csv('data.csv')
+# data = pd.read_csv('https://mrctab-my.sharepoint.com/:x:/g/personal/ankit_yadav_course5i_com/EbcoSaUvKGFMsVqJpir0umEBKhRA-MLVcjTM_dRj_B0hPQ?e=7i1hLS')
 data_fit = data[['acousticness','energy','danceability','instrumentalness','liveness','speechiness','tempo']]
 
 # load the model
