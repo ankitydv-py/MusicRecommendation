@@ -1,3 +1,4 @@
+--upgrade setuptools
 streamlit
 pandas
 pickle
