@@ -35,5 +35,5 @@ jobs:
           ECR_REGISTRY: ${{ secrets.ECR_REGISTRY }}
         run: |
           docker pull ankitpy/music-image
-          docker tag musicapp:latest $ECR_REGISTRY/music-image:latest
-          docker push $ECR_REGISTRY/music-image:latest
+          docker tag music-image:latest $ECR_REGISTRY/musicapp:latest
+          docker push $ECR_REGISTRY/musicapp:latest
