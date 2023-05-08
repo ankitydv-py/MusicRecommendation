@@ -6,7 +6,7 @@ on:
     
 env:
   AWS_REGION: ${{ secrets.AWS_REGION }}                  # set this to your preferred AWS region, e.g. us-west-1
-  ECR_REPOSITORY: ${{ secrets.ECS_CLUSTER }}          # set this to your Amazon ECR repository name
+  ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY }}          # set this to your Amazon ECR repository name
 #   ECR_REGISTRY: ${{ secrets.ECR_REGISTRY }}
   ECS_SERVICE: ${{ secrets.ECS_SERVICE }}                 # set this to your Amazon ECS service name
   ECS_CLUSTER: ${{ secrets.ECS_CLUSTER }}                   # set this to your Amazon ECS cluster name
@@ -52,7 +52,7 @@ jobs:
           # push it to ECR so that it can
           # be deployed to ECS.
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+  #        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
 
       - name: Download task definition
