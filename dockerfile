@@ -22,4 +22,4 @@ COPY model.pickle /usr/src/app/
 EXPOSE 5000
 
 # run the application
-CMD ["streamlit run", "/usr/src/app/app.py"]
+CMD ["streamlit", "run", "/usr/src/app/app.py","--server.port=5000", "--server.address=0.0.0.0"]
