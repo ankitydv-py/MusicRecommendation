@@ -9,7 +9,7 @@ env:
   ECR_REPOSITORY: musicrecommend        # set this to your Amazon ECR repository name
   ECS_SERVICE: Musicapp-1               # set this to your Amazon ECS service name
   ECS_CLUSTER: Musicapp                 # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: .aws/musicapp-revision2.json # set this file to the path to your
+  ECS_TASK_DEFINITION: .aws/musicapp.json # set this file to the path to your
   CONTAINER_NAME: musicrecommend        # set this to the name of the container in the
                                         # containerDefinitions section of your task definition
 permissions:
