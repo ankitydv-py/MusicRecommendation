@@ -4,18 +4,15 @@ import pickle
 
 # loading data to fit the model
 
-data = pd.read_csv('data.csv')
+data = pd.read_csv('./usr/src/app/data.csv')
 data_fit = data[['acousticness','energy','danceability','instrumentalness','liveness','speechiness','tempo']]
 
 # load the model
-pickle_in = open("model.pickle","rb")
+pickle_in = open("./usr/src/app/model.pickle","rb")
 model = pickle.load(pickle_in)
 song_clusters = model.predict(data_fit)
 data['cluster'] = song_clusters
 
-
-
-          
      
 # recommendation function
 def recommend_songs(song_name, year):
@@ -38,11 +35,6 @@ def recommend_songs(song_name, year):
         for i, song in enumerate(top_songs):
             success_text += (f"\n{i+1}.{song}\n")
     return success_text
-
-      
-
-
-
 
 def first():
        #data_fit = data[['acousticness','energy','danceability','instrumentalness','liveness','speechiness','tempo']]
