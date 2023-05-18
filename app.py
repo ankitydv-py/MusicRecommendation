@@ -12,10 +12,7 @@ pickle_in = open("./usr/src/app/model.pickle","rb")
 model = pickle.load(pickle_in)
 song_clusters = model.predict(data_fit)
 data['cluster'] = song_clusters
-
-
-
-          
+         
      
 # recommendation function
 def recommend_songs(song_name, year):
