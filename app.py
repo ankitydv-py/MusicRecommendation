@@ -69,7 +69,7 @@ def second():
             data['cluster'] = song_clusters
             #data = pd.concat([uploaded_data, data])
             # Use the uploaded data to generate recommendations
-            st.write(data)
+            # st.write(data)
             #min_year = data["year"].min()
             #max_year = data["year"].max()
             #st.write(uploaded_data)
