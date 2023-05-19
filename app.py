@@ -61,7 +61,7 @@ def second():
 # load the model
     
             data_fit = data[['acousticness','energy','danceability','instrumentalness','liveness','speechiness','tempo']]
-            pickle_in = open("model.pickle","rb")
+            pickle_in = open("./usr/src/app/model.pickle","rb")
             model = pickle.load(pickle_in)
 
 # get songs cluster
