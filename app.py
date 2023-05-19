@@ -54,7 +54,7 @@ def second():
     file = st.file_uploader("Choose a CSV file", type="csv")
     if file is not None:
             uploaded_data = pd.read_csv(file)
-            data = pd.read_csv('data.csv')
+            data = pd.read_csv('./usr/src/app/data.csv')
             data = pd.concat([uploaded_data, data])
             
             
